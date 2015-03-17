@@ -1,0 +1,3 @@
+[submodule "zenmap/zenmapQt/project/python4android"]
+	path = zenmap/zenmapQt/project/python4android
+	url = https://github.com/zielmicha/python4android
