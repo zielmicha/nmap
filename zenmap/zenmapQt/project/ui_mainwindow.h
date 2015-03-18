@@ -33,6 +33,7 @@ public:
     QLabel *label_3;
     QLineEdit *lineEdit;
     QLabel *label_2;
+    QLabel *label_4;
     QPushButton *pushButton;
 
     void setupUi(QMainWindow *MainWindow)
@@ -70,6 +71,11 @@ public:
 
         verticalLayout->addWidget(label_2);
 
+        label_4 = new QLabel(verticalLayoutWidget);
+        label_4->setObjectName(QStringLiteral("label_4"));
+
+        verticalLayout->addWidget(label_4);
+
         pushButton = new QPushButton(verticalLayoutWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
 
@@ -87,7 +93,8 @@ public:
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
         label->setText(QApplication::translate("MainWindow", "Intentionally minimal Nmap example", 0));
         label_3->setText(QApplication::translate("MainWindow", "IP address:", 0));
-        label_2->setText(QApplication::translate("MainWindow", "Results are parsed by ZenmapCore from Nmap XML:", 0));
+        label_2->setText(QApplication::translate("MainWindow", "Results are parsed by ZenmapCore from Nmap XML.", 0));
+        label_4->setText(QApplication::translate("MainWindow", "TextLabel", 0));
         pushButton->setText(QApplication::translate("MainWindow", "Scan", 0));
     } // retranslateUi
 
