@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
-    w.show();
+    w.showMaximized();
 
     freopen("/sdcard/python-out.txt", "a", stdout);
     freopen("/sdcard/python-out.txt", "a", stderr);
@@ -30,8 +30,7 @@ int main(int argc, char *argv[])
 
     Py_Initialize();
     PyRun_SimpleString("print 'Python running'");
-    PyRun_SimpleString("import zenmapCore.NmapParser as n; print n");
-    Py_Finalize();
+    PyRun_SimpleString("import main");
 
     return a.exec();
 }

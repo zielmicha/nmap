@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>480</height>
+    <height>924</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
       <x>18</x>
       <y>10</y>
       <width>781</width>
-      <height>461</height>
+      <height>901</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -39,24 +39,20 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="ip"/>
      </item>
      <item>
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>Results are parsed by ZenmapCore from Nmap XML.</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Results are parsed by ZenmapCore from Nmap XML.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_4">
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-      </widget>
+      <widget class="QTextBrowser" name="textBrowser"/>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="scan">
        <property name="text">
         <string>Scan</string>
        </property>

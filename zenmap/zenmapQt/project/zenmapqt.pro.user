@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 3.3.2, 2015-03-19T13:31:19. -->
+<!-- Written by QtCreator 3.3.2, 2015-03-19T19:53:29. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -298,7 +298,7 @@
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
       <value type="QString" key="BuildTargetSdk">android-21</value>
       <value type="QString" key="KeystoreLocation"></value>
-      <value type="QString" key="ProFilePathForInputFile"></value>
+      <value type="QString" key="ProFilePathForInputFile">/home/michal/nmap/zenmap/zenmapQt/project/zenmapqt.pro</value>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build Android APK</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
@@ -376,7 +376,7 @@
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.3">
       <value type="QString" key="BuildTargetSdk">android-21</value>
       <value type="QString" key="KeystoreLocation"></value>
-      <value type="QString" key="ProFilePathForInputFile"></value>
+      <value type="QString" key="ProFilePathForInputFile">/home/michal/nmap/zenmap/zenmapQt/project/zenmapqt.pro</value>
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build Android APK</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
@@ -439,7 +439,9 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidDeployConfiguration2</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.PluginSettings"/>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.PluginSettings">
+    <value type="QString" key="AndroidDeviceSerialNumber">cd06edd1</value>
+   </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
     <valuelist type="QVariantList" key="Analyzer.Valgrind.AddedSuppressionFiles"/>
     <value type="bool" key="Analyzer.Valgrind.Callgrind.CollectBusEvents">false</value>
@@ -475,15 +477,10 @@
      <value type="int">13</value>
      <value type="int">14</value>
     </valuelist>
-    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
-    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Arguments"></value>
-    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable"></value>
-    <value type="bool" key="ProjectExplorer.CustomExecutableRunConfiguration.UseTerminal">false</value>
-    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.WorkingDirectory">%{buildDir}</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Własny plik wykonywalny</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">zenmapqt</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.CustomExecutableRunConfiguration</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.AndroidRunConfiguration:/home/michal/nmap/zenmap/zenmapQt/project/zenmapqt.pro</value>
+    <value type="QString" key="QMakeProjectManager.QmakeAndroidRunConfiguration.ProFile">zenmapqt.pro</value>
     <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>

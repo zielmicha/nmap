@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.2.1
+** Created by: Qt User Interface Compiler version 5.4.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -18,6 +18,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -31,21 +32,21 @@ public:
     QVBoxLayout *verticalLayout;
     QLabel *label;
     QLabel *label_3;
-    QLineEdit *lineEdit;
+    QLineEdit *ip;
     QLabel *label_2;
-    QLabel *label_4;
-    QPushButton *pushButton;
+    QTextBrowser *textBrowser;
+    QPushButton *scan;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(800, 480);
+        MainWindow->resize(800, 924);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         verticalLayoutWidget = new QWidget(centralWidget);
         verticalLayoutWidget->setObjectName(QStringLiteral("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(18, 10, 781, 461));
+        verticalLayoutWidget->setGeometry(QRect(18, 10, 781, 901));
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
@@ -61,25 +62,25 @@ public:
 
         verticalLayout->addWidget(label_3);
 
-        lineEdit = new QLineEdit(verticalLayoutWidget);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        ip = new QLineEdit(verticalLayoutWidget);
+        ip->setObjectName(QStringLiteral("ip"));
 
-        verticalLayout->addWidget(lineEdit);
+        verticalLayout->addWidget(ip);
 
         label_2 = new QLabel(verticalLayoutWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
 
         verticalLayout->addWidget(label_2);
 
-        label_4 = new QLabel(verticalLayoutWidget);
-        label_4->setObjectName(QStringLiteral("label_4"));
+        textBrowser = new QTextBrowser(verticalLayoutWidget);
+        textBrowser->setObjectName(QStringLiteral("textBrowser"));
 
-        verticalLayout->addWidget(label_4);
+        verticalLayout->addWidget(textBrowser);
 
-        pushButton = new QPushButton(verticalLayoutWidget);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
+        scan = new QPushButton(verticalLayoutWidget);
+        scan->setObjectName(QStringLiteral("scan"));
 
-        verticalLayout->addWidget(pushButton);
+        verticalLayout->addWidget(scan);
 
         MainWindow->setCentralWidget(centralWidget);
 
@@ -93,9 +94,8 @@ public:
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
         label->setText(QApplication::translate("MainWindow", "Intentionally minimal Nmap example", 0));
         label_3->setText(QApplication::translate("MainWindow", "IP address:", 0));
-        label_2->setText(QApplication::translate("MainWindow", "Results are parsed by ZenmapCore from Nmap XML.", 0));
-        label_4->setText(QApplication::translate("MainWindow", "TextLabel", 0));
-        pushButton->setText(QApplication::translate("MainWindow", "Scan", 0));
+        label_2->setText(QApplication::translate("MainWindow", "<html><head/><body><p>Results are parsed by ZenmapCore from Nmap XML.</p></body></html>", 0));
+        scan->setText(QApplication::translate("MainWindow", "Scan", 0));
     } // retranslateUi
 
 };

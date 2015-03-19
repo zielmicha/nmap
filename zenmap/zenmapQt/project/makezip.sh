@@ -12,8 +12,6 @@ def setlocale(*args, **kwargs): raise Error()' > $A/lib/python2.7/locale.py
 echo 'class TestCase: pass' > $A/lib/python2.7/unittest.py
 echo 'from StringIO import *' > $A/lib/python2.7/cStringIO.py
 
-cp -rv ../../zenmapCore $A/lib/python2.7/zenmapCore
-
 echo 'array = str' > $A/lib/python2.7/array.py
 STDMODULES="shutil stat os posixpath traceback linecache
 types posixpath genericpath warnings fnmatch collections
@@ -22,18 +20,25 @@ abc copy_reg sre_compile sre_constants sre_parse keyword
 heapq bisect random __future__ glob socket StringIO urlparse
 mimetools tempfile rfc822 gzip struct io subprocess pickle
 atexit encodings/__init__ encodings/ascii encodings/utf_8
-encodings/aliases encodings/hex_codec codecs SocketServer
+encodings/aliases encodings/hex_codec encodings/string_escape
+codecs SocketServer
 locale copy weakref _weakrefset xml/__init__
 xml/sax/_exceptions xml/sax/expatreader
 xml/sax/handler xml/sax/__init__ xml/sax/saxutils
-xml/sax/xmlreader
+xml/sax/xmlreader xml/parsers/__init__ xml/parsers/expat
 logging/__init__
 optparse textwrap"
 mkdir $A/lib/python2.7/encodings
 mkdir -p $A/lib/python2.7/xml/sax
+mkdir $A/lib/python2.7/xml/parsers
 mkdir $A/lib/python2.7/logging
 for mod in $STDMODULES; do
     cp python4android/Python-2.7/Lib/$mod.py $A/lib/python2.7/$mod.py || exit 1
 done
+
+cp ../../../nmap-{mac-prefixes,os-db,payloads,protocols,rpc,service-probes,services} $A
+
+cp -r ../../zenmapCore $A/lib/python2.7/zenmapCore
+cp -v ../*.py $A/lib/python2.7/
 
 python makezip.py > zip.h

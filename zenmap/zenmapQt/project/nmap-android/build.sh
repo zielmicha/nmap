@@ -27,3 +27,5 @@ fi
 
 PATH=$TOOLCHAIN:$THISDIR:$PATH \
     make #-j$(getconf _NPROCESSORS_ONLN)
+
+$TOOLCHAIN/$PREFIX-strip nmap
