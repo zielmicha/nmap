@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
 
     Py_Initialize();
     PyRun_SimpleString("print 'Python running'");
+    PyRun_SimpleString("import zenmapCore.NmapParser as n; print n");
     Py_Finalize();
 
     return a.exec();

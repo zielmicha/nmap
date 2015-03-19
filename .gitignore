@@ -1,0 +1,11 @@
+*.pyc
+*.3pcap
+config.log
+config.h
+makefile.dep
+config.status
+*.manfile
+*.manmisc
+*.o
+*.lo
+*.a

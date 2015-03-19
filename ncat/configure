@@ -5202,7 +5202,7 @@ if test "${with_liblua+set}" = set; then :
 fi
 
 
-LUA_CFLAGS="-DLUA_USE_POSIX -DLUA_USE_DLOPEN"
+LUA_CFLAGS="-DLUA_USE_POSIX"
 
 
 # They don't want lua
